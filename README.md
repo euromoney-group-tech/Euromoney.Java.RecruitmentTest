@@ -3,7 +3,7 @@
 One of the things we do at Euromoney is publish and manage content.
 This assignment is to analyse text, detecting and filtering negative words.
 
-- This assignment takes between 30 minutes and an hour.
+- This assignment takes about an hour.
 - [JUnit](http://www.junit.org/) and [Mockito](http://mockito.org/), references have been added using [Maven](http://maven.apache.org/) build management software.
 
 ## Task requirements
@@ -15,8 +15,11 @@ This assignment is to analyse text, detecting and filtering negative words.
 
 ## Task Stories
 
-Please complete each story in order.
-
+Please complete each story in order. An example of negativeWords to filter out and content to analyze could be:
+<pre>
+ String[] negativeWords = {"swine","bad","nasty","horrible"};<br>
+ String content = "The weather in Manchester in winter is bad. It rains all the time - it must be horrible for people visiting.";
+</pre>
 ---
 
 ### Story 1
@@ -27,8 +30,8 @@ So that **we can track the amount of negative content**
 
 #### Acceptance criteria
 
-- Total number of negative words output to screen
-- Console output the total number of negative words and the phrase analysed
+- Total number of occurrences of the negative words output to screen
+- Console output the total number of occurrences negative words and the phrase analysed
 - Example output:
 
 <pre>Scanned the text:<br>
@@ -71,7 +74,7 @@ So that **I can see the original content**.
 
 #### Acceptance criteria
 
-- Count of negative words output
+- Total number of occurrences of the negative words output to screen
 - Original text output
 
 ---
